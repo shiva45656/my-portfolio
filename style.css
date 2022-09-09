@@ -44,147 +44,6 @@ body{
   padding-top: 4%;
 }
 
-*,
-::after,
-::before {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-
-.general-container {
-  padding-top: 4%;
-display: flex;
-height: 30rem;
-margin: 0 auto;
-max-width: 100%;
-width: 70rem;
-}
-
-.radio {
-display: none;
-}
-
-.content {
-background: var(--white)
-url('certificates/REACT.jpeg')
-100% / cover no-repeat;
-border-radius: 3rem;
-cursor: pointer;
-flex: 1;
-margin-right: 0.8rem;
-overflow: hidden;
-position: relative;
-transition: all 2s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-border-style: solid;
-border-width: 0.3px;
-}
-
-.content:hover {
-box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
-}
-
-.icons {
-align-items: center;
-
-border-radius: 50%;
-bottom: 1rem;
-color: var(--golden-tainoi);
-display: flex;
-font-size: 1.5rem;
-height: 2.5rem;
-justify-content: center;
-left: 1.1rem;
-position: absolute;
-width: 2.5rem;
-}
-
-.content:nth-of-type(2) {
-background-image: url('certificates/gl_page-0001.jpeg');
-}
-
-.content:nth-of-type(3) {
-background-image: url('certificates/hackerrank.jpeg');
-}
-
-.content:nth-of-type(4) {
-background-image: url('certificates/java programming_page-0001.jpeg');
-}
-
-.content:nth-of-type(5) {
-background-image: url('certificates/ORACLE cloud_page-0001.jpeg');
-}
-.content:nth-of-type(6) {
-background-image: url('certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20220702-46-8b69jx_page-0001.jpeg');
-}
-.content:nth-of-type(7) {
-background-image: url('certificates/infosys.jpeg');
-}
-
-
-.content:nth-of-type(2) .icon {
-color: var(--dark-gray);
-}
-
-.content:nth-of-type(3) .icon {
-color: var(--dark-blue);
-}
-
-.content:nth-of-type(4) .icon {
-color: var(--gray);
-}
-
-.content:nth-of-type(5) .icon {
-color: var(--golden);
-}
-.content:nth-of-type(6) .icon {
-color: var(--golden);
-}
-.content:nth-of-type(7) .icon {
-color: var(--golden);
-}
-
-
-.card-title {
-bottom: 1.2rem;
-color: var(--white);
-display: flex;
-flex-direction: column;
-font-size: 1.2rem;
-left: 4.5rem;
-line-height: 1.1;
-opacity: 0;
-position: absolute;
-text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-transform: translateX(2rem);
-transition: 290ms cubic-bezier(0.05, 0.61, 0.41, 0.95) 300ms;
-transition-property: opacity, transform;
-user-select: none;
-
-}
-
-.subtitle {
-font-size: 0.9rem;
-}
-
-/* Effect */
-.radio:checked + .content {
-border-radius: 2rem;
-box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
-flex: 10;
-}
-
-.radio:checked + .content > .card-title {
-opacity: 1;
-transform: translateX(0);
-}
-.radio{
-  border-style: dotted;
- border-width: 2px;
-
-}
-
-
 
 .containers p {
   font-size: 2rem;
@@ -215,10 +74,6 @@ transform: translateX(0);
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-
-
-
-
 .name{
   width: 100%;
 
@@ -300,7 +155,6 @@ transform: translateX(0);
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
   background-size: cover;
 }
 
@@ -323,7 +177,6 @@ transform: translateX(0);
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
   filter: blur(10px);
   background-size: cover;
   opacity: 0.25;
@@ -339,12 +192,50 @@ transform: translateX(0);
 }
 
 
-* {
-  position: relative;
-  transition: all .3s ease
+
+.certifications{
+    padding-top: 50px
+  }
+
+  .card-holder {
+  display: flex;
+  width: 130%;
+  position: absolute;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.card img, .card iframe  {
+  width: 100%;
+  height: 120%;
+  border-radius: inherit;
+}
+
+.card.large {
+  width: 650px;
+  transform: perspective(600px) rotateY(0deg) translateZ(150px);
+  box-shadow: 0px 0px 15px rgba(0,0,0,1);
+  margin-right: -15px;
+}
+
+.card {
+  width: 240px;
+  height: 240px;
+  display: inline-flex;
+  background: #333;
+  border-radius: 30px;
+  transition: all .4s ease;
+  margin-right: -150px;
+  box-shadow: 0 18px 31px -8px rgba(0,0,0,.5);
+  transform: perspective(700px) rotateY(45deg);
 }
 
 
+.card:hover {
+  transform: perspective(600px) rotateY(0deg) translateZ(100px);
+  box-shadow: 0px 0px 15px rgba(0,0,0,1);
+}
 
 .hero-section{
   justify-content: center;
@@ -429,19 +320,6 @@ transform: translateX(0);
   line-height: 1.4;
   word-spacing: 100vw;
 }
-.caard__heading:hover{
-  color: black ;
-  text-shadow: 5px;
-  font-weight: bolder;
-  font-size: 3rem;
-  background-color: white;
-  border-radius: 10%;
-}
-.caard__category:hover{
-  color: black ;
-  text-shadow: 5px;
-  font-weight: bolder;
-  font-size: 2rem;
-  background-color: white;
-    border-radius: 10%;
+.card:not(.last):hover {
+  margin-right: -50px;
 }
