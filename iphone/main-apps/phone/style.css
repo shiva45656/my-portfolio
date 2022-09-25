@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  color: #eee;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee
+}
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #333;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+
+#phone {   background:url(https://blogs.which.co.uk/technology/files/2013/03/iphone_5_hero.jpg) no-repeat 50.4% top;
+  background-size: contain;
+  height:100%;
+}
+#wrapper {
+  width:100%;
+  height:100%;
+  margin:0 auto 0 auto;
+  position:relative;
+  top:150px;
+  padding:24px 0 0 0;
+  background: #000000;
+}
+.key {
+  border-radius: 50px 50px 50px 50px;
+  color:white;
+  width:70px;
+  height:70px;
+  text-align:center;
+  font-size:30px;
+  float:left;
+  box-sizing:border-box;
+  padding:5px 0 0 0;
+  margin:0 7px 10px 7px;
+  border:1px solid #444;
+  cursor:pointer;
+}
+.key span {
+  display:block;
+  color: white;
+  text-align:center;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.key.special {
+  line-height:60px;
+}
+.key.nb {
+  border:none;
+}
+.key.phone {
+  background:#5CDB74;
+  border:none;
+  color:#FFF;
+  line-height:60px;
+  font-size:40px;
+}
+.clear {
+  clear:both;
+}

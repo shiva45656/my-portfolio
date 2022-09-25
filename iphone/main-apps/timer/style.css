@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  color: #eee;
+  background-image: url(https://img.freepik.com/free-vector/yellow-background-with-halftone-lines-design_1017-30148.jpg?w=2000);
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee
+}
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #333;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+
+.base-timer {
+  top: 150px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: orange;
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: orange;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}

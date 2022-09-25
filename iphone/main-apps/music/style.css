@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  color: #eee;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+    background-image: url(https://media.istockphoto.com/vectors/colorful-motion-speed-lines-background-vector-id1353913770?k=20&m=1353913770&s=612x612&w=0&h=zPQnZOFFrVylBbPMP2CmmrnxfZiAK7KCDIk7LeVaeDA=);
+}
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #000000;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+
+
+.player {
+  background: #000000;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  height: 650px;
+  width: 320px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+.album-cover {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-cover-img {
+  width: 270px;
+  height: 270px;
+}
+
+.music-bar {
+  padding: 0 3rem;
+}
+
+progress {
+  border: 0;
+  color: #ED5483;
+  height: 5px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-value {
+   background: #000000;
+   border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+   height: 5px;
+   background: #000000;
+   border-radius: 10px;
+ }
+
+.sheeran-s::-webkit-progress-value {
+  background: #000000;
+}
+
+.bieber-ly::-webkit-progress-value {
+  background: #000000;
+}
+
+.sheeran-soy::-webkit-progress-value {
+  background: #000000;
+}
+
+.sheeran-s::-webkit-progress-value {
+  background: #000000;
+}
+
+.music-time {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 3rem;
+  font-size: .72rem;
+  color: #b8235a;
+}
+
+.music-title {
+  text-align: center;
+}
+
+.music-name {
+  font-size: 1.3em;
+  margin: .5rem;
+}
+
+.artist-name,
+.album-name {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.album-name {
+  color: #b8235a;
+}
+
+.music-controls {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-btn {
+  padding: 1rem;
+}
+
+.repeat i,
+.shuffle i {
+  color: #818181;
+}
+
+.forward {
+  margin-right: 1rem;
+}
+
+.rewind {
+  margin-left: 1rem;
+}
+
+.playpause {
+  margin: 1rem;
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bottom i {
+  color: #b8235a;
+}
