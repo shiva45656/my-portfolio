@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  color: #eee;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee;
+  background-image: url(https://wallpaperaccess.com/full/3097920.jpg);
+}
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #000000;
+  box-shadow: 0 0 10px black;
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+
+
+
+.container {
+    height: auto;
+}
+.calc {
+  height: auto;
+    width: auto;
+    padding: 5px;
+    padding-top: 62%;
+    border-radius: 20px;
+    background-color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    z-index: 0;
+
+}
+.screen-container {
+    height: 160px;
+    color: #fff;
+    vertical-align: text-top;
+    position: relative;
+    overflow: hidden;
+}
+.screen {
+    position: absolute;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 10px;
+    font-size: 26px;
+    word-wrap: break-word;
+}
+.row {
+    display: flex;
+}
+.btn {
+    width: 60px;
+    height: 50px;
+    border-radius: 60px;
+    margin: 4px;
+    box-sizing: border-box;
+    background-color: #313131;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    user-select: none;
+}
+.btn::after {
+    content: attr(data-label);
+}
+.ac, .plus-minus, .percent {
+    background-color: #9f9f9f;
+    color: #000;
+}
+.divide, .times, .minus, .plus, .eql {
+    background-color: #f59906;
+}
+.zero {
+    width: 108px;
+}
+.zero::after {
+    content: attr(data-label);
+    width: 40px;
+    display: block;
+}
+.plus-minus span:first-child {
+    vertical-align: top;
+}
+.btn:hover, .btn:active {
+    background-color: #585858;
+}
+.divide:hover, .times:hover, .minus:hover, .plus:hover, .eql:hover,
+.divide:active, .times:active, .minus:active, .plus:active, .eql:active {
+    color: #f59906;
+    background-color: #fff !important;
+}
+.ac:hover, .plus-minus:hover, .percent:hover,
+.ac:active, .plus-minus:active, .percent:active {
+    background-color: #c4c4c4;
+}
+
+
+@media (max-width: 576px) {
+    .calc {
+        width: 324px;
+    }
+    .screen-container {
+        height: 220px;
+    }
+    .screen {
+        font-size: 35px;
+    }
+    .btn {
+        width: 70px;
+        height: 70px;
+        margin: 6px;
+        font-size: 25px;
+        line-height: 70px;
+    }
+    .zero {
+        width: 152px;
+    }
+    .zero::after {
+        width: 70px;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/519/307/large_2x/yellow-orange-and-pink-gradient-background-free-photo.jpg);
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee
+  font-family: "system-ui";
+    font-weight: bolder;
+}
+
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #333;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+.photobooth {
+  background: white;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: right;
+}
+
+.player {
+  position: absolute;
+  top: 77px;
+  right: 5px;
+  width: 300px;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}

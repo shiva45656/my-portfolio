@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/519/307/large_2x/yellow-orange-and-pink-gradient-background-free-photo.jpg);
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  background-color: #eee;
+  font-family: "system-ui";
+    font-weight: bolder;
+}
+
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: #ddd;
+  background-image: url(https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #333;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 white;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  font-size: 25px;;
+  font-family: 'Arvo', cursive;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 12px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
