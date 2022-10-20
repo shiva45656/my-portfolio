@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/519/307/large_2x/yellow-orange-and-pink-gradient-background-free-photo.jpg);
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  align-items: center;
+}
+
+
+ol, ul {
+  list-style: none
+}
+
+.ios {
+  position: relative;
+  width: 335px;
+  height: 700px;
+  margin: 2rem auto;
+  border-radius: 3.2rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 12px solid #333;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .5)
+}
+
+.ios:before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 25px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 0 0 20px 20px
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 1.3rem
+}
+
+.header__time {
+  position: absolute;
+  top: .8rem
+}
+
+.header__list {
+  display: flex;
+  position: absolute;
+  top: .5rem;
+  right: 1.1rem
+}
+
+.header__item {
+  margin: 0 2px
+}
+.clock {
+     width: 15rem;
+     height: 15rem;
+     border: 20px solid white;
+     border-radius: 50%;
+     margin: 50px auto;
+      margin-top: 150px;
+     padding: 2rem;
+     box-shadow:
+       0 0 0 4px rgba(0,0,0,0.1),
+       inset 0 0 0 3px #EFEFEF,
+       inset 0 0 10px black,
+       0 0 10px rgba(0,0,0,0.2);
+   }
+
+   .clock-face {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transform: translateY(-3px); /* account for the height of the clock hands */
+   }
+
+   .hand {
+     width: 50%;
+     height: 7px;
+     background: tomato;
+     position: absolute;
+     top: 50%;
+     transform-origin: 100%;
+     transform: rotate(90deg);
+     transition: all 0.05s;
+     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+   }
+
+   .btn{
+     position: relative;
+     margin-left: 130px;
+     margin-top: 150px;
+
+   }
+   .btn:hover{
+     color: red;
+   }

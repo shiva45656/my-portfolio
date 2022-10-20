@@ -15,9 +15,9 @@ body {
   color: black;
   font-size: 14px;
   font-family: "Helvetica", sans-serif;
-  background-color: #eee
+  background-color: #eee;
   font-family: "system-ui";
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 
@@ -143,15 +143,15 @@ ol, ul {
 }
 
 .icon__clock {
-  background-image: url(https://i.ibb.co/gRPZ4q2/apple-clock-493151.png)
+  background-image: url(icons/clock-256x256-2365231.png)
 }
 
 .icon__camera {
-  background-image: url(https://i.ibb.co/9ss9jz5/apple-camera-493147.png)
+  background-image: url( )
 }
 
 .icon__stocks {
-  background-image: url(https://i.ibb.co/fX3LLN5/apple-stock-493158.png)
+  background-image: url(icons/timer.png)
 }
 
 .icon__mole {
@@ -171,11 +171,11 @@ ol, ul {
 }
 
 .icon__store {
-  background-image: url(https://i.ibb.co/6N3ww84/apple-store-493161.png)
+  background-image: url(https://i.pinimg.com/736x/d7/9c/e2/d79ce280371d2bb9e90d61ef70cd216c.jpg)
 }
 
 .icon__health {
-  background-image: url(https://i.ibb.co/WFw8pMP/apple-healt-493148.png)
+  background-image: url(icons/voice-memos-256x256-1575942.png)
 }
 
 .icon__photos {
@@ -187,7 +187,7 @@ ol, ul {
 }
 
 .icon__files {
-  background-image: url(https://i.ibb.co/P1S2V8P/files-2365229.png)
+  background-image: url(https://cdn-icons-png.flaticon.com/512/4310/4310857.png)
 }
 
 .icon__weather {
@@ -195,7 +195,7 @@ ol, ul {
 }
 
 .icon__home {
-  background-image: url(https://i.ibb.co/Xj4wT01/home-2365227.png)
+  background-image: url(icons/reminders-256x256-2365242.png)
 }
 
 .icon__news {
